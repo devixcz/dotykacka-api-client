@@ -1,0 +1,25 @@
+{
+  "name": "dotykacka/php-api-client",
+  "authors": [
+    {
+      "name": "Jan Cinert"
+    }
+  ],
+  "require": {
+    "php-http/httplug": "*",
+    "php-http/client-common": "*",
+    "php-http/client-implementation": "*",
+    "php-http/message": "*",
+    "php-http/message-factory": "*",
+    "php-http/discovery": "*",
+    "guzzlehttp/psr7": "*",
+    "php-http/guzzle6-adapter": "*"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "DotykackaPHPApiClient\\": "src"
+    }
+  }
+}
