@@ -1,119 +1,119 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Product extends ObjectBase {
-        /** @var integer */
-        public $bitflags;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $canonicalname;
+class Product extends ObjectBase
+{
+    /** @var int */
+    public $bitflags;
 
-        /** @var int */
-        public $categoryid;
+    /** @var string */
+    public $canonicalname;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var int */
+    public $categoryid;
 
-        /** @var string */
-        public $currency;
+    /** @var int */
+    public $cloudid;
 
-        /** @var integer */
-        public $deleted;
+    /** @var string */
+    public $currency;
 
-        /** @var string */
-        public $description;
+    /** @var int */
+    public $deleted;
 
-        /** @var double */
-        public $discountpercent;
+    /** @var string */
+    public $description;
 
-        /** @var integer */
-        public $discountpermitted;
+    /** @var float */
+    public $discountpercent;
 
-        /** @var integer */
-        public $display;
+    /** @var int */
+    public $discountpermitted;
 
-        /** @var string */
-        public $ean;
+    /** @var int */
+    public $display;
 
-        /** @var string */
-        public $hexcolor;
+    /** @var string */
+    public $ean;
 
-        /** @var double */
-        public $marginmin;
+    /** @var string */
+    public $hexcolor;
 
-        /** @var string */
-        public $name;
+    /** @var float */
+    public $marginmin;
 
-        /** @var string */
-        public $noteslist;
+    /** @var string */
+    public $name;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $noteslist;
 
-        /** @var integer */
-        public $onsale;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var double */
-        public $packageitem;
+    /** @var int */
+    public $onsale;
 
-        /** @var double */
-        public $packaging;
+    /** @var float */
+    public $packageitem;
 
-        /** @var double */
-        public $packagingmeasurement;
+    /** @var float */
+    public $packaging;
 
-        /** @var string */
-        public $plu;
+    /** @var float */
+    public $packagingmeasurement;
 
-        /** @var double */
-        public $points;
+    /** @var string */
+    public $plu;
 
-        /** @var double */
-        public $pricewithoutvat;
+    /** @var float */
+    public $points;
 
-        /** @var int */
-        public $productid;
+    /** @var float */
+    public $pricewithoutvat;
 
-        /** @var double */
-        public $purchasepricewithoutvat;
+    /** @var int */
+    public $productid;
 
-        /** @var integer */
-        public $requirespriceentry;
+    /** @var float */
+    public $purchasepricewithoutvat;
 
-        /** @var int */
-        public $sortorder;
+    /** @var int */
+    public $requirespriceentry;
 
-        /** @var integer */
-        public $stockdeduct;
+    /** @var int */
+    public $sortorder;
 
-        /** @var string */
-        public $stockoverdraft;
+    /** @var int */
+    public $stockdeduct;
 
-        /** @var double */
-        public $stockquantity;
+    /** @var string */
+    public $stockoverdraft;
 
-        /** @var string */
-        public $subtitle;
+    /** @var float */
+    public $stockquantity;
 
-        /** @var int */
-        public $supplierId;
+    /** @var string */
+    public $subtitle;
 
-        /** @var string */
-        public $supplierproductcode;
+    /** @var int */
+    public $supplierId;
 
-        /** @var string */
-        public $tagslist;
+    /** @var string */
+    public $supplierproductcode;
 
-        /** @var string */
-        public $units;
+    /** @var string */
+    public $tagslist;
 
-        /** @var string */
-        public $unitsmeasurement;
+    /** @var string */
+    public $units;
 
-        /** @var double */
-        public $vat;
+    /** @var string */
+    public $unitsmeasurement;
 
-    }
-    
+    /** @var float */
+    public $vat;
+}

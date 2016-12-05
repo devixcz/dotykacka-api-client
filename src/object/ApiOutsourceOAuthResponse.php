@@ -1,20 +1,20 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class ApiOutsourceOAuthResponse extends ObjectBase {
-        /** @var integer */
-        public $cloudid;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var object */
-        public $company;
+class ApiOutsourceOAuthResponse extends ObjectBase
+{
+    /** @var int */
+    public $cloudid;
 
-        /** @var string */
-        public $status;
+    /** @var object */
+    public $company;
 
-        /** @var int */
-        public $userId;
+    /** @var string */
+    public $status;
 
-    }
-    
+    /** @var int */
+    public $userId;
+}

@@ -1,26 +1,26 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class EmployeeSaleInfo extends ObjectBase {
-        /** @var int */
-        public $id;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $name;
+class EmployeeSaleInfo extends ObjectBase
+{
+    /** @var int */
+    public $id;
 
-        /** @var double */
-        public $purchaseValue;
+    /** @var string */
+    public $name;
 
-        /** @var double */
-        public $purchaseValueWithoutVAT;
+    /** @var float */
+    public $purchaseValue;
 
-        /** @var double */
-        public $value;
+    /** @var float */
+    public $purchaseValueWithoutVAT;
 
-        /** @var double */
-        public $valueWithoutVAT;
+    /** @var float */
+    public $value;
 
-    }
-    
+    /** @var float */
+    public $valueWithoutVAT;
+}

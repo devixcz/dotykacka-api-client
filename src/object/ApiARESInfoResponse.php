@@ -1,50 +1,50 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class ApiARESInfoResponse extends ObjectBase {
-        /** @var string */
-        public $city;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $codePF;
+class ApiARESInfoResponse extends ObjectBase
+{
+    /** @var string */
+    public $city;
 
-        /** @var string */
-        public $companyName;
+    /** @var string */
+    public $codePF;
 
-        /** @var string */
-        public $dateCreated;
+    /** @var string */
+    public $companyName;
 
-        /** @var string */
-        public $dateValidity;
+    /** @var string */
+    public $dateCreated;
 
-        /** @var string */
-        public $dic;
+    /** @var string */
+    public $dateValidity;
 
-        /** @var string */
-        public $houseNumber;
+    /** @var string */
+    public $dic;
 
-        /** @var string */
-        public $ico;
+    /** @var string */
+    public $houseNumber;
 
-        /** @var string */
-        public $municpalArea;
+    /** @var string */
+    public $ico;
 
-        /** @var string */
-        public $municpalDistrict;
+    /** @var string */
+    public $municpalArea;
 
-        /** @var string */
-        public $region;
+    /** @var string */
+    public $municpalDistrict;
 
-        /** @var string */
-        public $stateCode;
+    /** @var string */
+    public $region;
 
-        /** @var string */
-        public $street;
+    /** @var string */
+    public $stateCode;
 
-        /** @var string */
-        public $zipCode;
+    /** @var string */
+    public $street;
 
-    }
-    
+    /** @var string */
+    public $zipCode;
+}

@@ -1,137 +1,137 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Orderbean extends ObjectBase {
-        /** @var string */
-        public $bkp;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var integer */
-        public $branchid;
+class Orderbean extends ObjectBase
+{
+    /** @var string */
+    public $bkp;
 
-        /** @var string */
-        public $branchname;
+    /** @var int */
+    public $branchid;
 
-        /** @var int */
-        public $canceleddate;
+    /** @var string */
+    public $branchname;
 
-        /** @var string */
-        public $cashregistertype;
+    /** @var int */
+    public $canceleddate;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var string */
+    public $cashregistertype;
 
-        /** @var int */
-        public $completed;
+    /** @var int */
+    public $cloudid;
 
-        /** @var string */
-        public $currency;
+    /** @var int */
+    public $completed;
 
-        /** @var int */
-        public $customerlongid;
+    /** @var string */
+    public $currency;
 
-        /** @var integer */
-        public $documenttype;
+    /** @var int */
+    public $customerlongid;
 
-        /** @var int */
-        public $eetsubjectid;
+    /** @var int */
+    public $documenttype;
 
-        /** @var int */
-        public $employeeid;
+    /** @var int */
+    public $eetsubjectid;
 
-        /** @var int */
-        public $employeeservedId;
+    /** @var int */
+    public $employeeid;
 
-        /** @var string */
-        public $fik;
+    /** @var int */
+    public $employeeservedId;
 
-        /** @var integer */
-        public $flags;
+    /** @var string */
+    public $fik;
 
-        /** @var int */
-        public $inserted;
+    /** @var int */
+    public $flags;
 
-        /** @var string */
-        public $invoice;
+    /** @var int */
+    public $inserted;
 
-        /** @var integer */
-        public $itemcount;
+    /** @var string */
+    public $invoice;
 
-        /** @var double */
-        public $locacc;
+    /** @var int */
+    public $itemcount;
 
-        /** @var int */
-        public $locdate;
+    /** @var float */
+    public $locacc;
 
-        /** @var double */
-        public $loclat;
+    /** @var int */
+    public $locdate;
 
-        /** @var double */
-        public $loclng;
+    /** @var float */
+    public $loclat;
 
-        /** @var string */
-        public $note;
+    /** @var float */
+    public $loclng;
 
-        /** @var int */
-        public $orderid;
+    /** @var string */
+    public $note;
 
-        /** @var string */
-        public $orderseriesid;
+    /** @var int */
+    public $orderid;
 
-        /** @var int */
-        public $ordersummaryid;
+    /** @var string */
+    public $orderseriesid;
 
-        /** @var integer */
-        public $paid;
+    /** @var int */
+    public $ordersummaryid;
 
-        /** @var integer */
-        public $parked;
+    /** @var int */
+    public $paid;
 
-        /** @var integer */
-        public $parklocation;
+    /** @var int */
+    public $parked;
 
-        /** @var string */
-        public $paymenttypeid;
+    /** @var int */
+    public $parklocation;
 
-        /** @var int */
-        public $pgKey;
+    /** @var string */
+    public $paymenttypeid;
 
-        /** @var string */
-        public $pkp;
+    /** @var int */
+    public $pgKey;
 
-        /** @var double */
-        public $points;
+    /** @var string */
+    public $pkp;
 
-        /** @var integer */
-        public $printed;
+    /** @var float */
+    public $points;
 
-        /** @var integer */
-        public $refunded;
+    /** @var int */
+    public $printed;
 
-        /** @var int */
-        public $relatedorderid;
+    /** @var int */
+    public $refunded;
 
-        /** @var string */
-        public $relatedorderseriesid;
+    /** @var int */
+    public $relatedorderid;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var string */
+    public $relatedorderseriesid;
 
-        /** @var int */
-        public $tableId;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var string */
-        public $tablename;
+    /** @var int */
+    public $tableId;
 
-        /** @var double */
-        public $totalvaluerounded;
+    /** @var string */
+    public $tablename;
 
-        /** @var int */
-        public $updated;
+    /** @var float */
+    public $totalvaluerounded;
 
-        /** @var int */
-        public $versiondate;
+    /** @var int */
+    public $updated;
 
-    }
-    
+    /** @var int */
+    public $versiondate;
+}

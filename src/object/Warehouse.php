@@ -1,53 +1,53 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Warehouse extends ObjectBase {
-        /** @var string */
-        public $barcode;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var integer[] */
-        public $branches;
+class Warehouse extends ObjectBase
+{
+    /** @var string */
+    public $barcode;
 
-        /** @var string */
-        public $canonicalname;
+    /** @var int[] */
+    public $branches;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var string */
+    public $canonicalname;
 
-        /** @var integer */
-        public $deleted;
+    /** @var int */
+    public $cloudid;
 
-        /** @var integer */
-        public $enabled;
+    /** @var int */
+    public $deleted;
 
-        /** @var string */
-        public $hexcolor;
+    /** @var int */
+    public $enabled;
 
-        /** @var string */
-        public $name;
+    /** @var string */
+    public $hexcolor;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $name;
 
-        /** @var int */
-        public $pgKey;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var string */
-        public $providername;
+    /** @var int */
+    public $pgKey;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var string */
+    public $providername;
 
-        /** @var integer */
-        public $type;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var int */
-        public $versiondate;
+    /** @var int */
+    public $type;
 
-        /** @var int */
-        public $warehouseid;
+    /** @var int */
+    public $versiondate;
 
-    }
-    
+    /** @var int */
+    public $warehouseid;
+}

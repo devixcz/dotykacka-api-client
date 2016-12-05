@@ -1,74 +1,74 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Supplier extends ObjectBase {
-        /** @var string */
-        public $address1;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $address2;
+class Supplier extends ObjectBase
+{
+    /** @var string */
+    public $address1;
 
-        /** @var string */
-        public $canonicalname;
+    /** @var string */
+    public $address2;
 
-        /** @var string */
-        public $city;
+    /** @var string */
+    public $canonicalname;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var string */
+    public $city;
 
-        /** @var string */
-        public $countrycode;
+    /** @var int */
+    public $cloudid;
 
-        /** @var integer */
-        public $deleted;
-  
-        /** @var integer */
-        public $display;
+    /** @var string */
+    public $countrycode;
 
-        /** @var string */
-        public $dnids;
+    /** @var int */
+    public $deleted;
 
-        /** @var string */
-        public $email;
+    /** @var int */
+    public $display;
 
-        /** @var int */
-        public $externalid;
+    /** @var string */
+    public $dnids;
 
-        /** @var string */
-        public $ico;
+    /** @var string */
+    public $email;
 
-        /** @var string */
-        public $name;
+    /** @var int */
+    public $externalid;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $ico;
 
-        /** @var int */
-        public $pgKey;
+    /** @var string */
+    public $name;
 
-        /** @var string */
-        public $phone;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var int */
+    public $pgKey;
 
-        /** @var int */
-        public $supplierid;
+    /** @var string */
+    public $phone;
 
-        /** @var string */
-        public $supplieridString;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var string */
-        public $vatno;
+    /** @var int */
+    public $supplierid;
 
-        /** @var int */
-        public $versiondate;
+    /** @var string */
+    public $supplieridString;
 
-        /** @var string */
-        public $zip;
+    /** @var string */
+    public $vatno;
 
-    }
-    
+    /** @var int */
+    public $versiondate;
+
+    /** @var string */
+    public $zip;
+}

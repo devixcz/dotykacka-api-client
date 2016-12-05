@@ -1,17 +1,17 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class ReceiptInfo extends ObjectBase {
-        /** @var integer */
-        public $count;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $type;
+class ReceiptInfo extends ObjectBase
+{
+    /** @var int */
+    public $count;
 
-        /** @var double */
-        public $value;
+    /** @var string */
+    public $type;
 
-    }
-    
+    /** @var float */
+    public $value;
+}

@@ -1,44 +1,44 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Tag extends ObjectBase {
-        /** @var string */
-        public $canonicalname;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var integer */
-        public $cloudid;
+class Tag extends ObjectBase
+{
+    /** @var string */
+    public $canonicalname;
 
-        /** @var int */
-        public $customerforeignId;
+    /** @var int */
+    public $cloudid;
 
-        /** @var integer */
-        public $display;
+    /** @var int */
+    public $customerforeignId;
 
-        /** @var integer */
-        public $externalid;
+    /** @var int */
+    public $display;
 
-        /** @var string */
-        public $name;
+    /** @var int */
+    public $externalid;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $name;
 
-        /** @var int */
-        public $pgKey;
-    
-        /** @var int */
-        public $serialVersionUID;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var string */
-        public $tag;
+    /** @var int */
+    public $pgKey;
 
-        /** @var integer */
-        public $tagid;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var int */
-        public $versiondate;
+    /** @var string */
+    public $tag;
 
-    }
-    
+    /** @var int */
+    public $tagid;
+
+    /** @var int */
+    public $versiondate;
+}

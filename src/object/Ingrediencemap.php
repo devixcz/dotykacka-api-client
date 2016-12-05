@@ -1,62 +1,62 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Ingrediencemap extends ObjectBase {
-        /** @var integer */
-        public $TOTAL_ROWS;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var int */
-        public $belongstoproductId;
+class Ingrediencemap extends ObjectBase
+{
+    /** @var int */
+    public $TOTAL_ROWS;
 
-        /** @var string */
-        public $belongstoproductIdString;
+    /** @var int */
+    public $belongstoproductId;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var string */
+    public $belongstoproductIdString;
 
-        /** @var integer */
-        public $deleted;
-    
-        /** @var string */
-        public $ingUnit;
+    /** @var int */
+    public $cloudid;
 
-        /** @var int */
-        public $ingrediencemapid;
+    /** @var int */
+    public $deleted;
 
-        /** @var int */
-        public $ingredienceproductId;
+    /** @var string */
+    public $ingUnit;
 
-        /** @var string */
-        public $ingredienceproductIdString;
+    /** @var int */
+    public $ingrediencemapid;
 
-        /** @var string */
-        public $origproductname;
+    /** @var int */
+    public $ingredienceproductId;
 
-        /** @var int */
-        public $pgKey;
+    /** @var string */
+    public $ingredienceproductIdString;
 
-        /** @var string */
-        public $productUnit;
+    /** @var string */
+    public $origproductname;
 
-        /** @var double */
-        public $purchasepricewithoutvat2;
+    /** @var int */
+    public $pgKey;
 
-        /** @var double */
-        public $quantity;
+    /** @var string */
+    public $productUnit;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var float */
+    public $purchasepricewithoutvat2;
 
-        /** @var double */
-        public $totalsum;
+    /** @var float */
+    public $quantity;
 
-        /** @var string */
-        public $units;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var int */
-        public $versiondate;
+    /** @var float */
+    public $totalsum;
 
-    }
-    
+    /** @var string */
+    public $units;
+
+    /** @var int */
+    public $versiondate;
+}

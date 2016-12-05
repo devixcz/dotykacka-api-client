@@ -1,14 +1,13 @@
 <?php
 
-    namespace DotykackaPHPApiClient\Response;
+namespace DotykackaPHPApiClient\Response;
 
-    class Error {
+class Error
+{
+    public $message;
 
-        public $message;
-
-        public function __construct( $message ) {
-            $this->message = $message;
-        }
-
+    public function __construct($message)
+    {
+        $this->message = $message;
     }
-        
+}

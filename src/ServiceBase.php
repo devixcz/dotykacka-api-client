@@ -1,16 +1,13 @@
 <?php
 
-    namespace DotykackaPHPApiClient;
+namespace DotykackaPHPApiClient;
 
-    class ServiceBase {
+class ServiceBase
+{
+    protected $apiClient;
 
-        protected $apiClient;
-
-        public function __construct( ApiClient $apiClient ) {
-
-            $this->apiClient = $apiClient;
-
-        }
-
+    public function __construct(ApiClient $apiClient)
+    {
+        $this->apiClient = $apiClient;
     }
-    
+}

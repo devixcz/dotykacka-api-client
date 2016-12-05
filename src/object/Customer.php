@@ -1,122 +1,122 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Customer extends ObjectBase {
-        /** @var string */
-        public $address1;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $address2;
+class Customer extends ObjectBase
+{
+    /** @var string */
+    public $address1;
 
-        /** @var string */
-        public $barcode;
+    /** @var string */
+    public $address2;
 
-        /** @var int */
-        public $birthday;
+    /** @var string */
+    public $barcode;
 
-        /** @var string */
-        public $canonicalname;
+    /** @var int */
+    public $birthday;
 
-        /** @var string */
-        public $city;
+    /** @var string */
+    public $canonicalname;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var string */
+    public $city;
 
-        /** @var string */
-        public $color;
+    /** @var int */
+    public $cloudid;
 
-        /** @var string */
-        public $companyname;
+    /** @var string */
+    public $color;
 
-        /** @var string */
-        public $countrycode;
+    /** @var string */
+    public $companyname;
 
-        /** @var int */
-        public $created;
+    /** @var string */
+    public $countrycode;
 
-        /** @var int */
-        public $customerid;
+    /** @var int */
+    public $created;
 
-        /** @var string */
-        public $customeridString;
+    /** @var int */
+    public $customerid;
 
-        /** @var integer */
-        public $deleted;
+    /** @var string */
+    public $customeridString;
 
-        /** @var int */
-        public $discountgroupId;
+    /** @var int */
+    public $deleted;
 
-        /** @var integer */
-        public $display;
+    /** @var int */
+    public $discountgroupId;
 
-        /** @var string */
-        public $email;
+    /** @var int */
+    public $display;
 
-        /** @var int */
-        public $expiredate;
+    /** @var string */
+    public $email;
 
-        /** @var int */
-        public $externalid;
+    /** @var int */
+    public $expiredate;
 
-        /** @var string */
-        public $firstname;
+    /** @var int */
+    public $externalid;
 
-        /** @var string */
-        public $headerprint;
+    /** @var string */
+    public $firstname;
 
-        /** @var string */
-        public $ico;
+    /** @var string */
+    public $headerprint;
 
-        /** @var string */
-        public $internalnote;
+    /** @var string */
+    public $ico;
 
-        /** @var integer */
-        public $iscompany;
+    /** @var string */
+    public $internalnote;
 
-        /** @var integer */
-        public $isdemographic;
+    /** @var int */
+    public $iscompany;
 
-        /** @var integer */
-        public $isoptemailmarketing;
+    /** @var int */
+    public $isdemographic;
 
-        /** @var integer */
-        public $isoptsmsmarketing;
+    /** @var int */
+    public $isoptemailmarketing;
 
-        /** @var string */
-        public $lastname;
+    /** @var int */
+    public $isoptsmsmarketing;
 
-        /** @var string */
-        public $note;
+    /** @var string */
+    public $lastname;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $note;
 
-        /** @var int */
-        public $pgKey;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var string */
-        public $phone;
+    /** @var int */
+    public $pgKey;
 
-        /** @var double */
-        public $points;
+    /** @var string */
+    public $phone;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var float */
+    public $points;
 
-        /** @var string */
-        public $tagslist;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var string */
-        public $vatno;
+    /** @var string */
+    public $tagslist;
 
-        /** @var int */
-        public $versiondate;
+    /** @var string */
+    public $vatno;
 
-        /** @var string */
-        public $zip;
+    /** @var int */
+    public $versiondate;
 
-    }
-    
+    /** @var string */
+    public $zip;
+}

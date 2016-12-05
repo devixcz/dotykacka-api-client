@@ -1,59 +1,59 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Category extends ObjectBase {
-        /** @var string */
-        public $canonicalname;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var int */
-        public $categoryid;
+class Category extends ObjectBase
+{
+    /** @var string */
+    public $canonicalname;
 
-        /** @var string */
-        public $categoryidString;
+    /** @var int */
+    public $categoryid;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var string */
+    public $categoryidString;
 
-        /** @var integer */
-        public $deleted;
+    /** @var int */
+    public $cloudid;
 
-        /** @var integer */
-        public $display;
+    /** @var int */
+    public $deleted;
 
-        /** @var int */
-        public $eetsubjectid;
+    /** @var int */
+    public $display;
 
-        /** @var int */
-        public $externalid;
+    /** @var int */
+    public $eetsubjectid;
 
-        /** @var string */
-        public $hexcolor;
+    /** @var int */
+    public $externalid;
 
-        /** @var integer */
-        public $itemscount;
+    /** @var string */
+    public $hexcolor;
 
-        /** @var string */
-        public $name;
+    /** @var int */
+    public $itemscount;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $name;
 
-        /** @var int */
-        public $parentcategoryid;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var int */
-        public $pgKey;
+    /** @var int */
+    public $parentcategoryid;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var int */
+    public $pgKey;
 
-        /** @var int */
-        public $sortorder;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var int */
-        public $versiondate;
+    /** @var int */
+    public $sortorder;
 
-    }
-    
+    /** @var int */
+    public $versiondate;
+}

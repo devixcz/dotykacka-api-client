@@ -1,140 +1,140 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Receipt extends ObjectBase {
-        /** @var integer */
-        public $bitflags;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var integer */
-        public $branchid;
+class Receipt extends ObjectBase
+{
+    /** @var int */
+    public $bitflags;
 
-        /** @var int */
-        public $canceleddate;
+    /** @var int */
+    public $branchid;
 
-        /** @var string */
-        public $canonicalname;
+    /** @var int */
+    public $canceleddate;
 
-        /** @var int */
-        public $categoryid;
+    /** @var string */
+    public $canonicalname;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var int */
+    public $categoryid;
 
-        /** @var int */
-        public $completed;
+    /** @var int */
+    public $cloudid;
 
-        /** @var string */
-        public $currency;
+    /** @var int */
+    public $completed;
 
-        /** @var int */
-        public $customerlongid;
+    /** @var string */
+    public $currency;
 
-        /** @var double */
-        public $discountfixed;
+    /** @var int */
+    public $customerlongid;
 
-        /** @var double */
-        public $discountpercent;
+    /** @var float */
+    public $discountfixed;
 
-        /** @var integer */
-        public $discountpermitted;
+    /** @var float */
+    public $discountpercent;
 
-        /** @var string */
-        public $ean;
+    /** @var int */
+    public $discountpermitted;
 
-        /** @var int */
-        public $eetsubjectid;
+    /** @var string */
+    public $ean;
 
-        /** @var int */
-        public $employeeid;
+    /** @var int */
+    public $eetsubjectid;
 
-        /** @var string */
-        public $hexcolor;
+    /** @var int */
+    public $employeeid;
 
-        /** @var int */
-        public $inserted;
+    /** @var string */
+    public $hexcolor;
 
-        /** @var integer */
-        public $kitchenprinted;
+    /** @var int */
+    public $inserted;
 
-        /** @var string */
-        public $name;
+    /** @var int */
+    public $kitchenprinted;
 
-        /** @var string */
-        public $note;
+    /** @var string */
+    public $name;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $note;
 
-        /** @var integer */
-        public $onsale;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var int */
-        public $orderid;
+    /** @var int */
+    public $onsale;
 
-        /** @var double */
-        public $packaging;
+    /** @var int */
+    public $orderid;
 
-        /** @var integer */
-        public $parked;
+    /** @var float */
+    public $packaging;
 
-        /** @var int */
-        public $pgKey;
+    /** @var int */
+    public $parked;
 
-        /** @var double */
-        public $points;
+    /** @var int */
+    public $pgKey;
 
-        /** @var double */
-        public $pricebilledwithoutvat;
+    /** @var float */
+    public $points;
 
-        /** @var double */
-        public $pricepurchasewithoutvat;
+    /** @var float */
+    public $pricebilledwithoutvat;
 
-        /** @var double */
-        public $pricewithoutvat;
+    /** @var float */
+    public $pricepurchasewithoutvat;
 
-        /** @var int */
-        public $productid;
+    /** @var float */
+    public $pricewithoutvat;
 
-        /** @var double */
-        public $profitwithoutvat;
+    /** @var int */
+    public $productid;
 
-        /** @var double */
-        public $quantity;
+    /** @var float */
+    public $profitwithoutvat;
 
-        /** @var integer */
-        public $refundid;
+    /** @var float */
+    public $quantity;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var int */
+    public $refundid;
 
-        /** @var int */
-        public $serialid;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var integer */
-        public $stockdeduct;
+    /** @var int */
+    public $serialid;
 
-        /** @var double */
-        public $stockunitpricewithoutvat;
+    /** @var int */
+    public $stockdeduct;
 
-        /** @var string */
-        public $subtitle;
+    /** @var float */
+    public $stockunitpricewithoutvat;
 
-        /** @var string */
-        public $tagslist;
+    /** @var string */
+    public $subtitle;
 
-        /** @var string */
-        public $units;
+    /** @var string */
+    public $tagslist;
 
-        /** @var int */
-        public $updated;
+    /** @var string */
+    public $units;
 
-        /** @var double */
-        public $vat;
+    /** @var int */
+    public $updated;
 
-        /** @var int */
-        public $versiondate;
+    /** @var float */
+    public $vat;
 
-    }
-    
+    /** @var int */
+    public $versiondate;
+}

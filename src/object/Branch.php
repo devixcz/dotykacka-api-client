@@ -1,44 +1,44 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Branch extends ObjectBase {
-        /** @var integer */
-        public $branchid;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $canonicalname;
+class Branch extends ObjectBase
+{
+    /** @var int */
+    public $branchid;
 
-        /** @var integer */
-        public $cloudid;
-    
-        /** @var string */
-        public $config;
+    /** @var string */
+    public $canonicalname;
 
-        /** @var int */
-        public $created;
+    /** @var int */
+    public $cloudid;
 
-        /** @var integer */
-        public $deleted;
+    /** @var string */
+    public $config;
 
-        /** @var integer */
-        public $display;
+    /** @var int */
+    public $created;
 
-        /** @var integer */
-        public $flags;
+    /** @var int */
+    public $deleted;
 
-        /** @var string */
-        public $gcmid;
+    /** @var int */
+    public $display;
 
-        /** @var string */
-        public $name;
+    /** @var int */
+    public $flags;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $gcmid;
 
-        /** @var int */
-        public $versiondate;
+    /** @var string */
+    public $name;
 
-    }
-    
+    /** @var string */
+    public $numcanonicalname;
+
+    /** @var int */
+    public $versiondate;
+}

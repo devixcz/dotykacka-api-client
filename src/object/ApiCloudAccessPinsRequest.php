@@ -1,23 +1,23 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class ApiCloudAccessPinsRequest extends ObjectBase {
-        /** @var integer */
-        public $branchId;
-    
-        /** @var integer */
-        public $cloudId;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $controlString;
+class ApiCloudAccessPinsRequest extends ObjectBase
+{
+    /** @var int */
+    public $branchId;
 
-        /** @var int */
-        public $date;
+    /** @var int */
+    public $cloudId;
 
-        /** @var int */
-        public $userId;
+    /** @var string */
+    public $controlString;
 
-    }
-    
+    /** @var int */
+    public $date;
+
+    /** @var int */
+    public $userId;
+}

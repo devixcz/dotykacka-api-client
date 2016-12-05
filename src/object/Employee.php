@@ -1,71 +1,71 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class Employee extends ObjectBase {
-        /** @var integer */
-        public $accesslevel;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var integer[] */
-        public $accesslevels;
+class Employee extends ObjectBase
+{
+    /** @var int */
+    public $accesslevel;
 
-        /** @var string */
-        public $accesspinshahash;
+    /** @var int[] */
+    public $accesslevels;
 
-        /** @var string */
-        public $barcode;
+    /** @var string */
+    public $accesspinshahash;
 
-        /** @var string */
-        public $canonicalname;
+    /** @var string */
+    public $barcode;
 
-        /** @var integer */
-        public $cloudid;
+    /** @var string */
+    public $canonicalname;
 
-        /** @var integer */
-        public $deleted;
+    /** @var int */
+    public $cloudid;
 
-        /** @var string */
-        public $email;
+    /** @var int */
+    public $deleted;
 
-        /** @var integer */
-        public $enabled;
+    /** @var string */
+    public $email;
 
-        /** @var string */
-        public $hexcolor;
+    /** @var int */
+    public $enabled;
 
-        /** @var string */
-        public $name;
+    /** @var string */
+    public $hexcolor;
 
-        /** @var string */
-        public $numcanonicalname;
+    /** @var string */
+    public $name;
 
-        /** @var int */
-        public $pgKey;
+    /** @var string */
+    public $numcanonicalname;
 
-        /** @var string */
-        public $phone;
+    /** @var int */
+    public $pgKey;
 
-        /** @var integer */
-        public $requirepinalways;
+    /** @var string */
+    public $phone;
 
-        /** @var int */
-        public $serialVersionUID;
+    /** @var int */
+    public $requirepinalways;
 
-        /** @var integer */
-        public $stockaccesslevel;
+    /** @var int */
+    public $serialVersionUID;
 
-        /** @var integer[] */
-        public $stockaccesslevels;
+    /** @var int */
+    public $stockaccesslevel;
 
-        /** @var int */
-        public $userid;
+    /** @var int[] */
+    public $stockaccesslevels;
 
-        /** @var string */
-        public $useridString;
+    /** @var int */
+    public $userid;
 
-        /** @var int */
-        public $versiondate;
+    /** @var string */
+    public $useridString;
 
-    }
-    
+    /** @var int */
+    public $versiondate;
+}

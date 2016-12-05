@@ -1,17 +1,17 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class ApiPasswordResetRequest extends ObjectBase {
-        /** @var string */
-        public $email;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $newPassword;
+class ApiPasswordResetRequest extends ObjectBase
+{
+    /** @var string */
+    public $email;
 
-        /** @var string */
-        public $password;
+    /** @var string */
+    public $newPassword;
 
-    }
-    
+    /** @var string */
+    public $password;
+}

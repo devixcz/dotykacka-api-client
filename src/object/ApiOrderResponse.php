@@ -1,14 +1,14 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class ApiOrderResponse extends ObjectBase {
-        /** @var Orderbean */
-        public $order;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var int[] */
-        public $receipts;
+class ApiOrderResponse extends ObjectBase
+{
+    /** @var Orderbean */
+    public $order;
 
-    }
-    
+    /** @var int[] */
+    public $receipts;
+}

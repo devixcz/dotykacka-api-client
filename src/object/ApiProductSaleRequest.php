@@ -1,23 +1,23 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class ApiProductSaleRequest extends ObjectBase {
-        /** @var integer */
-        public $cloudId;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var string */
-        public $note;
+class ApiProductSaleRequest extends ObjectBase
+{
+    /** @var int */
+    public $cloudId;
 
-        /** @var int */
-        public $productid;
+    /** @var string */
+    public $note;
 
-        /** @var double */
-        public $quantity;
+    /** @var int */
+    public $productid;
 
-        /** @var int */
-        public $warehouseid;
+    /** @var float */
+    public $quantity;
 
-    }
-    
+    /** @var int */
+    public $warehouseid;
+}

@@ -1,23 +1,23 @@
 <?php
-    namespace DotykackaPHPApiClient\Object;
 
-    use DotykackaPHPApiClient\ObjectBase;
+namespace DotykackaPHPApiClient\Object;
 
-    class TagSaleInfo extends ObjectBase {
-        /** @var string */
-        public $name;
+use DotykackaPHPApiClient\ObjectBase;
 
-        /** @var double */
-        public $purchaseValue;
+class TagSaleInfo extends ObjectBase
+{
+    /** @var string */
+    public $name;
 
-        /** @var double */
-        public $purchaseValueWithoutVAT;
+    /** @var float */
+    public $purchaseValue;
 
-        /** @var double */
-        public $value;
+    /** @var float */
+    public $purchaseValueWithoutVAT;
 
-        /** @var double */
-        public $valueWithoutVAT;
+    /** @var float */
+    public $value;
 
-    }
-    
+    /** @var float */
+    public $valueWithoutVAT;
+}
