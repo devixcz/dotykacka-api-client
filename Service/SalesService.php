@@ -100,7 +100,7 @@ class SalesService extends ServiceBase
 
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/receipt/'.$cloudId,
+                'api/receipt/list/'.$cloudId,
                 $params
         );
 
@@ -137,7 +137,7 @@ class SalesService extends ServiceBase
 
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/receipt/'.$cloudId.'/'.$branchId,
+                'api/receipt/list/'.$cloudId.'/'.$branchId,
                 $params
         );
 
@@ -180,15 +180,16 @@ class SalesService extends ServiceBase
     /*
     **
      * @param int $cloudId
+     * @param int $branchId
      * @param int $id
      *
      * @return ApiOrderResponse|Error
      */
-    public function getOrderById($cloudId, $id)
+    public function getOrderById($cloudId, $branchId, $id)
     {
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/order/'.$cloudId.'/'.$id
+                'api/order/'.$cloudId.'/'.$branchId.'/'.$id
         );
 
         if (isset($response['error'])) {
