@@ -27,7 +27,7 @@ class ProductService extends ServiceBase
 
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/product/'.$cloudId.'/'.$warehouseId,
+                'api/product/'.$cloudId.'/'.$warehouseId.'/list',
                 $params
         );
 
