@@ -4,16 +4,16 @@ namespace DotykackaPHPApiClient\Object;
 
 use DotykackaPHPApiClient\ObjectBase;
 
-class Ingrediencemap extends ObjectBase
+class IngredientsMap extends ObjectBase
 {
-    /** @var int */
-    public $TOTAL_ROWS;
-
     /** @var int */
     public $belongstoproductId;
 
     /** @var string */
     public $belongstoproductIdString;
+
+    /** @var string */
+    public $childExtId;
 
     /** @var int */
     public $cloudid;
@@ -36,6 +36,9 @@ class Ingrediencemap extends ObjectBase
     /** @var string */
     public $origproductname;
 
+    /** @var string */
+    public $parentExtId;
+
     /** @var int */
     public $pgKey;
 
@@ -51,8 +54,11 @@ class Ingrediencemap extends ObjectBase
     /** @var int */
     public $serialVersionUID;
 
-    /** @var float */
+    /** @var int */
     public $totalsum;
+
+    /** @var int */
+    public $treeQuantity;
 
     /** @var string */
     public $units;

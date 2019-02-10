@@ -37,16 +37,15 @@ class StockService extends ServiceBase
     }
 
     /**
-     * @param int      $cloudId
-     * @param Supplier $supplier
+     * @param ApiProductSaleRequest $apiProductSaleRequest
      *
      * @return Supplier|Error
      */
-    public function createProductSale($cloudId, ApiProductSaleRequest $apiProductSaleRequest)
+    public function createProductSale(ApiProductSaleRequest $apiProductSaleRequest)
     {
         $response = $this->apiClient->sendRequest(
                 'POST',
-                'api/supplier/'.$cloudId.'/create',
+                'api/product/sale',
                 array(),
                 (string) $apiProductSaleRequest
         );
@@ -54,22 +53,22 @@ class StockService extends ServiceBase
         if (isset($response['error'])) {
             return new Error($response['error']);
         }
-
-        $responseObject = new Supplier($response);
-
-        return $responseObject;
+        
+        return $response;
     }
 
     /**
+     * @param int    $cloudId
+     * @param int    $branchId
      * @param string $file
      *
      * @return Error|mixed|null
      */
-    public function uploadDeliveryNote($file)
+    public function uploadDeliveryNote($cloudId, $branchId, $file)
     {
         $response = $this->apiClient->sendRequest(
                 'POST',
-                'api/stock/delivery-note/upload',
+                'api/stock/delivery-note/upload/'.$cloudId.'/'.$branchId,
                 array(),
                 null,
                 array(

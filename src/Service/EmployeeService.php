@@ -55,17 +55,19 @@ class EmployeeService extends ServiceBase
     }
 
     /**
-     * @param int      $cloudId
-     * @param int|null $limit
-     * @param int|null $offset
+     * @param int         $cloudId
+     * @param int|null    $limit
+     * @param int|null    $offset
+     * @param string|null $sort
      *
      * @return Employee[]|Error
      */
-    public function getAllEmployeesForCloud($cloudId, $limit = null, $offset = null)
+    public function getAllEmployeesForCloud($cloudId, $limit = null, $offset = null, $sort = null)
     {
         $params = array(
-                'limit' => $limit,
+                'limit'  => $limit,
                 'offset' => $offset,
+                'sort'   => $sort,
         );
 
         $response = $this->apiClient->sendRequest(
@@ -98,7 +100,7 @@ class EmployeeService extends ServiceBase
     {
         $response = $this->apiClient->sendRequest(
                 'POST',
-                'api/employee/'.$cloudId.'/'.$employee->employeeid.'/update',
+                'api/employee/'.$cloudId.'/'.$employee->userid.'/update',
                 array(),
                 (string) $employee
         );

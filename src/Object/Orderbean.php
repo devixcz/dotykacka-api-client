@@ -6,6 +6,9 @@ use DotykackaPHPApiClient\ObjectBase;
 
 class Orderbean extends ObjectBase
 {
+    /** @var int */
+    public $amount;
+
     /** @var string */
     public $bkp;
 
@@ -27,6 +30,9 @@ class Orderbean extends ObjectBase
     /** @var int */
     public $completed;
 
+    /** @var int */
+    public $created;
+
     /** @var string */
     public $currency;
 
@@ -44,6 +50,12 @@ class Orderbean extends ObjectBase
 
     /** @var int */
     public $employeeservedId;
+
+    /** @var string */
+    public $externalid;
+
+    /** @var string */
+    public $fdata;
 
     /** @var string */
     public $fik;
@@ -93,6 +105,9 @@ class Orderbean extends ObjectBase
     /** @var int */
     public $parklocation;
 
+    /** @var int[] */
+    public $paymentMethods;
+
     /** @var string */
     public $paymenttypeid;
 
@@ -104,6 +119,9 @@ class Orderbean extends ObjectBase
 
     /** @var float */
     public $points;
+
+    /** @var string */
+    public $printdata;
 
     /** @var int */
     public $printed;
@@ -131,6 +149,9 @@ class Orderbean extends ObjectBase
 
     /** @var int */
     public $updated;
+
+    /** @var string */
+    public $variablesymbol;
 
     /** @var int */
     public $versiondate;

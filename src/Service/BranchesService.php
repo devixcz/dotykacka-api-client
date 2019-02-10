@@ -2,55 +2,31 @@
 
 namespace DotykackaPHPApiClient\Service;
 
-use DotykackaPHPApiClient\Object\Tag;
+use DotykackaPHPApiClient\Object\Branch;
 use DotykackaPHPApiClient\Response\Error;
 use DotykackaPHPApiClient\ServiceBase;
 
-class TagService extends ServiceBase
+class BranchesService extends ServiceBase
 {
-    /**
-     * @param int    $cloudId
-     * @param string $tagtype
-     * @param Tag    $tag
-     *
-     * @return Tag|Error
-     */
-    public function createTag($cloudId, $tagtype, Tag $tag)
-    {
-        $response = $this->apiClient->sendRequest(
-                'POST',
-                'api/tag/'.$cloudId.'/'.$tagtype.'/create',
-                array(),
-                (string) $tag
-        );
-
-        if (isset($response['error'])) {
-            return new Error($response['error']);
-        }
-
-        $responseObject = new Tag($response);
-
-        return $responseObject;
-    }
 
     /**
      * @param int $cloudId
      * @param int $id
      *
-     * @return Tag|Error
+     * @return Branch|Error
      */
-    public function getTag($cloudId, $id)
+    public function getBranch($cloudId, $id)
     {
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/tag/'.$cloudId.'/'.$id
+                'api/branches/'.$cloudId.'/'.$id
         );
 
         if (isset($response['error'])) {
             return new Error($response['error']);
         }
 
-        $responseObject = new Tag($response);
+        $responseObject = new Branch($response);
 
         return $responseObject;
     }
@@ -61,9 +37,9 @@ class TagService extends ServiceBase
      * @param int|null    $offset
      * @param string|null $sort
      *
-     * @return Tag[]|Error
+     * @return Branch[]|Error
      */
-    public function getAllTagsForCloud($cloudId, $limit = null, $offset = null, $sort = null)
+    public function getAllBranchesForCloud($cloudId, $limit = null, $offset = null, $sort = null)
     {
         $params = array(
                 'limit'  => $limit,
@@ -73,7 +49,7 @@ class TagService extends ServiceBase
 
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/tag/'.$cloudId,
+                'api/branches/'.$cloudId,
                 $params
         );
 
@@ -84,7 +60,7 @@ class TagService extends ServiceBase
         $list = array();
 
         foreach ($response as $item) {
-            $responseObject = new Tag($item);
+            $responseObject = new Branch($item);
             $list[] = $responseObject;
         }
 

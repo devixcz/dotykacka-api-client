@@ -7,6 +7,9 @@ use DotykackaPHPApiClient\ObjectBase;
 class Product extends ObjectBase
 {
     /** @var int */
+    public $TOTAL_ROWS;
+
+    /** @var int */
     public $bitflags;
 
     /** @var string */
@@ -15,8 +18,23 @@ class Product extends ObjectBase
     /** @var int */
     public $categoryid;
 
+    /** @var string */
+    public $categorymargin;
+
+    /** @var string */
+    public $categoryname;
+
     /** @var int */
     public $cloudid;
+
+    /** @var float */
+    public $ctlgAmountId;
+
+    /** @var int */
+    public $ctlgBindType;
+
+    /** @var float */
+    public $ctlgItemId;
 
     /** @var string */
     public $currency;
@@ -37,12 +55,42 @@ class Product extends ObjectBase
     public $display;
 
     /** @var string */
+    public $dnids;
+
+    /** @var string */
     public $ean;
+
+    /** @var int */
+    public $eetsubjectid;
+
+    /** @var string */
+    public $externalid;
+
+    /** @var int */
+    public $fiscalizationdisabled;
 
     /** @var string */
     public $hexcolor;
 
+    /** @var int */
+    public $ingredients;
+
+    /** @var int */
+    public $jointsale;
+
+    /** @var bool */
+    public $lastInventory;
+
     /** @var float */
+    public $lastInventoryValue;
+
+    /** @var float */
+    public $lastpurchasepricewithoutvat;
+
+    /** @var string */
+    public $margin;
+
+    /** @var int */
     public $marginmin;
 
     /** @var string */
@@ -66,6 +114,12 @@ class Product extends ObjectBase
     /** @var float */
     public $packagingmeasurement;
 
+    /** @var int */
+    public $permisions;
+
+    /** @var int */
+    public $pgKey;
+
     /** @var string */
     public $plu;
 
@@ -73,16 +127,37 @@ class Product extends ObjectBase
     public $points;
 
     /** @var float */
+    public $priceVatCsv;
+
+    /** @var float */
     public $pricewithoutvat;
+
+    /** @var float */
+    public $pricewithvat;
 
     /** @var int */
     public $productid;
 
+    /** @var string */
+    public $productidString;
+
+    /** @var float */
+    public $profitwithoutvat;
+
     /** @var float */
     public $purchasepricewithoutvat;
 
+    /** @var float */
+    public $purchasepricewithoutvat2;
+
     /** @var int */
     public $requirespriceentry;
+
+    /** @var int */
+    public $requiresquantityentry;
+
+    /** @var int */
+    public $serialVersionUID;
 
     /** @var int */
     public $sortorder;
@@ -96,6 +171,12 @@ class Product extends ObjectBase
     /** @var float */
     public $stockquantity;
 
+    /** @var float */
+    public $stockquantitystatus;
+
+    /** @var float */
+    public $stockupQuantitySum;
+
     /** @var string */
     public $subtitle;
 
@@ -108,6 +189,12 @@ class Product extends ObjectBase
     /** @var string */
     public $tagslist;
 
+    /** @var int */
+    public $takeawayitem;
+
+    /** @var int */
+    public $timeable;
+
     /** @var string */
     public $units;
 
@@ -116,4 +203,13 @@ class Product extends ObjectBase
 
     /** @var float */
     public $vat;
+
+    /** @var int */
+    public $versiondate;
+
+    /** @var Warehouse[] */
+    public $warehouses;
+
+    /** @var float */
+    public $writeoffQuatitySum;
 }

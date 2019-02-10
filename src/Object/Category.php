@@ -27,14 +27,23 @@ class Category extends ObjectBase
     /** @var int */
     public $eetsubjectid;
 
-    /** @var int */
+    /** @var string */
     public $externalid;
+
+    /** @var int */
+    public $fiscalizationdisabled;
+
+    /** @var int */
+    public $flags;
 
     /** @var string */
     public $hexcolor;
 
     /** @var int */
     public $itemscount;
+
+    /** @var string */
+    public $margin;
 
     /** @var string */
     public $name;
@@ -53,6 +62,9 @@ class Category extends ObjectBase
 
     /** @var int */
     public $sortorder;
+
+    /** @var float */
+    public $vat;
 
     /** @var int */
     public $versiondate;

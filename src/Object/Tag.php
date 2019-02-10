@@ -16,9 +16,12 @@ class Tag extends ObjectBase
     public $customerforeignId;
 
     /** @var int */
-    public $display;
+    public $deleted;
 
     /** @var int */
+    public $display;
+
+    /** @var string */
     public $externalid;
 
     /** @var string */

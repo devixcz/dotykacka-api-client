@@ -6,6 +6,9 @@ use DotykackaPHPApiClient\ObjectBase;
 
 class Receipt extends ObjectBase
 {
+    /** @var float */
+    public $billedunitprice;
+
     /** @var int */
     public $bitflags;
 
@@ -50,6 +53,9 @@ class Receipt extends ObjectBase
 
     /** @var int */
     public $employeeid;
+
+    /** @var string */
+    public $formattedPortion;
 
     /** @var string */
     public $hexcolor;
@@ -106,6 +112,9 @@ class Receipt extends ObjectBase
     public $quantity;
 
     /** @var int */
+    public $quantitydisplay;
+
+    /** @var int */
     public $refundid;
 
     /** @var int */
@@ -125,6 +134,15 @@ class Receipt extends ObjectBase
 
     /** @var string */
     public $tagslist;
+
+    /** @var float */
+    public $totalpricewithoutvat;
+
+    /** @var float */
+    public $totalpricewithvat;
+
+    /** @var float */
+    public $unitpricewithvat;
 
     /** @var string */
     public $units;

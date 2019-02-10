@@ -14,7 +14,6 @@ class ApiOrderResponse extends ObjectBase
 
     public function __construct($data = null)
     {
-
         parent::__construct($data);
 
         if ($data) {

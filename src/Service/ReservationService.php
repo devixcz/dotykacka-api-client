@@ -2,67 +2,69 @@
 
 namespace DotykackaPHPApiClient\Service;
 
-use DotykackaPHPApiClient\Object\Warehouse;
+use DotykackaPHPApiClient\Object\Reservation;
 use DotykackaPHPApiClient\Response\Error;
 use DotykackaPHPApiClient\ServiceBase;
 
-class WarehouseService extends ServiceBase
+class ReservationService extends ServiceBase
 {
     /**
-     * @param int       $cloudId
-     * @param Warehouse $warehouse
+     * @param int         $cloudId
+     * @param int         $branchId
+     * @param Reservation $reservation
      *
-     * @return Warehouse|Error
+     * @return Reservation|Error
      */
-    public function createWarehouse($cloudId, Warehouse $warehouse)
+    public function createReservation($cloudId, $branchId, Reservation $reservation)
     {
         $response = $this->apiClient->sendRequest(
                 'POST',
-                'api/warehouse/'.$cloudId.'/create',
+                'api/reservation/'.$cloudId.'/'.$branchId.'/create',
                 array(),
-                (string) $warehouse
+                (string) $reservation
         );
 
         if (isset($response['error'])) {
             return new Error($response['error']);
         }
 
-        $responseObject = new Warehouse($response);
-
-        return $responseObject;
-    }
-
-    /**
-     * @param int $cloudId
-     * @param int $id
-     *
-     * @return Warehouse|Error
-     */
-    public function getWarehouse($cloudId, $id)
-    {
-        $response = $this->apiClient->sendRequest(
-                'GET',
-                'api/warehouse/'.$cloudId.'/'.$id
-        );
-
-        if (isset($response['error'])) {
-            return new Error($response['error']);
-        }
-
-        $responseObject = new Warehouse($response);
+        $responseObject = new Reservation($response);
 
         return $responseObject;
     }
 
     /**
      * @param int         $cloudId
+     * @param int         $branchId
+     *
+     * @return Reservation|Error
+     */
+    public function getReservation($cloudId, $branchId, $id)
+    {
+        $response = $this->apiClient->sendRequest(
+                'GET',
+                'api/reservation/'.$cloudId.'/'.$branchId.'/'.$id
+        );
+
+        if (isset($response['error'])) {
+            return new Error($response['error']);
+        }
+
+        $responseObject = new Reservation($response);
+
+        return $responseObject;
+    }
+
+    /**
+     * @param int         $cloudId
+     * @param int         $branchId
      * @param int|null    $limit
      * @param int|null    $offset
      * @param string|null $sort
      *
-     * @return Warehouse[]|Error
+     * @return Reservation[]|Error
      */
-    public function getAllWarehousesForCloud($cloudId, $limit = null, $offset = null, $sort = null)
+    public function getAllReservationsForCloud($cloudId, $branchId, $limit = null, $offset = null, $sort = null)
     {
         $params = array(
                 'limit'  => $limit,
@@ -72,7 +74,7 @@ class WarehouseService extends ServiceBase
 
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/warehouse/'.$cloudId,
+                'api/reservation/'.$cloudId.'/'.$branchId,
                 $params
         );
 
@@ -83,7 +85,7 @@ class WarehouseService extends ServiceBase
         $list = array();
 
         foreach ($response as $item) {
-            $responseObject = new Warehouse($item);
+            $responseObject = new Reservation($item);
             $list[] = $responseObject;
         }
 
@@ -91,47 +93,49 @@ class WarehouseService extends ServiceBase
     }
 
     /**
-     * @param int       $cloudId
-     * @param Warehouse $warehouse
+     * @param int         $cloudId
+     * @param int         $branchId
+     * @param Reservation $reservation
      *
-     * @return Warehouse|Error
+     * @return Reservation|Error
      */
-    public function updateWarehouseField($cloudId, Warehouse $warehouse)
+    public function updateReservationField($cloudId, $branchId, Reservation $reservation)
     {
         $response = $this->apiClient->sendRequest(
                 'POST',
-                'api/warehouse/'.$cloudId.'/'.$warehouse->warehouseid.'/update',
+                'api/reservation/'.$cloudId.'/'.$branchId.'/'.$reservation->reservationid.'/update',
                 array(),
-                (string) $warehouse
+                (string) $reservation
         );
 
         if (isset($response['error'])) {
             return new Error($response['error']);
         }
 
-        $responseObject = new Warehouse($response);
+        $responseObject = new Reservation($response);
 
         return $responseObject;
     }
 
     /**
      * @param int $cloudId
+     * @param int $branchId
      * @param int $id
      *
-     * @return Warehouse|Error
+     * @return Reservation|Error
      */
-    public function deleteWarehouse($cloudId, $id)
+    public function deleteReservation($cloudId, $branchId, $id)
     {
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/warehouse/'.$cloudId.'/'.$id.'/delete'
+                'api/reservation/'.$cloudId.'/'.$branchId.'/'.$id.'/delete'
         );
 
         if (isset($response['error'])) {
             return new Error($response['error']);
         }
 
-        $responseObject = new Warehouse($response);
+        $responseObject = new Reservation($response);
 
         return $responseObject;
     }

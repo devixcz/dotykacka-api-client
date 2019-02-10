@@ -33,6 +33,9 @@ class Employee extends ObjectBase
     /** @var int */
     public $enabled;
 
+    /** @var int */
+    public $flags;
+
     /** @var string */
     public $hexcolor;
 

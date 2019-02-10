@@ -22,6 +22,9 @@ class Supplier extends ObjectBase
     public $cloudid;
 
     /** @var string */
+    public $companyid;
+
+    /** @var string */
     public $countrycode;
 
     /** @var int */
@@ -36,7 +39,7 @@ class Supplier extends ObjectBase
     /** @var string */
     public $email;
 
-    /** @var int */
+    /** @var string */
     public $externalid;
 
     /** @var string */
@@ -62,6 +65,9 @@ class Supplier extends ObjectBase
 
     /** @var string */
     public $supplieridString;
+
+    /** @var string */
+    public $vatid;
 
     /** @var string */
     public $vatno;

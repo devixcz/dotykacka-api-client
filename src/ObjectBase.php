@@ -8,11 +8,12 @@ class ObjectBase
     {
         if ($data) {
             foreach ($data as $k => $v) {
+                $property = $this->mapFieldToProperty($k);
                 if (property_exists(
                         static::class,
-                        $k
+                        $property
                 )) {
-                    $this->{$k} = $v;
+                    $this->{$property} = $v;
                 }
             }
         }
@@ -23,10 +24,21 @@ class ObjectBase
         $arr = array();
         foreach ($this as $k => $v) {
             if (!(null === $v)) {
-                $arr[$k] = $v;
+                $field = $this->mapPropertyToField($k);
+                $arr[$field] = $v;
             }
         }
 
         return json_encode($arr);
+    }
+    
+    protected function mapPropertyToField($property)
+    {
+        return str_replace('_', '-', $property);
+    }
+    
+    protected function mapFieldToProperty($field)
+    {
+        return str_replace('-', '_', $field);
     }
 }

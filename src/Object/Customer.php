@@ -60,7 +60,7 @@ class Customer extends ObjectBase
     /** @var int */
     public $expiredate;
 
-    /** @var int */
+    /** @var string */
     public $externalid;
 
     /** @var string */

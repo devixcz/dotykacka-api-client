@@ -94,7 +94,9 @@ class ApiClient
 
         return json_decode(
                 (string) $response->getBody(),
-                true
+                true,
+                512,
+                JSON_BIGINT_AS_STRING
         );
     }
 }

@@ -55,17 +55,19 @@ class CategoryService extends ServiceBase
     }
 
     /**
-     * @param int      $cloudId
-     * @param int|null $limit
-     * @param int|null $offset
+     * @param int         $cloudId
+     * @param int|null    $limit
+     * @param int|null    $offset
+     * @param string|null $sort
      *
      * @return Category[]|Error
      */
-    public function getAllCategoriesForCloud($cloudId, $limit = null, $offset = null)
+    public function getAllCategoriesForCloud($cloudId, $limit = null, $offset = null, $sort = null)
     {
         $params = array(
-                'limit' => $limit,
+                'limit'  => $limit,
                 'offset' => $offset,
+                'sort'   => $sort,
         );
 
         $response = $this->apiClient->sendRequest(

@@ -55,17 +55,19 @@ class CustomerService extends ServiceBase
     }
 
     /**
-     * @param int      $cloudId
-     * @param int|null $limit
-     * @param int|null $offset
+     * @param int         $cloudId
+     * @param int|null    $limit
+     * @param int|null    $offset
+     * @param string|null $sort
      *
      * @return Customer[]|Error
      */
-    public function getAllCustomersForCloud($cloudId, $limit = null, $offset = null)
+    public function getAllCustomersForCloud($cloudId, $limit = null, $offset = null, $sort = null)
     {
         $params = array(
-                'limit' => $limit,
+                'limit'  => $limit,
                 'offset' => $offset,
+                'sort'   => $sort,
         );
 
         $response = $this->apiClient->sendRequest(
@@ -113,16 +115,22 @@ class CustomerService extends ServiceBase
     }
 
     /**
-     * @param int $cloudId
-     * @param int $id
+     * @param int       $cloudId
+     * @param int       $id
+     * @param bool|null $anonymize
      *
      * @return Customer|Error
      */
-    public function deleteCustomer($cloudId, $id)
+    public function deleteCustomer($cloudId, $id, $anonymize = null)
     {
+        $params = array(
+                'anonymize'  => $anonymize,
+        );
+        
         $response = $this->apiClient->sendRequest(
                 'GET',
-                'api/customer/'.$cloudId.'/'.$id.'/delete'
+                'api/customer/'.$cloudId.'/'.$id.'/delete',
+                $params
         );
 
         if (isset($response['error'])) {

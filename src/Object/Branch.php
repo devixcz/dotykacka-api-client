@@ -12,6 +12,9 @@ class Branch extends ObjectBase
     /** @var string */
     public $canonicalname;
 
+    /** @var string */
+    public $cbhash;
+
     /** @var int */
     public $cloudid;
 
@@ -28,6 +31,9 @@ class Branch extends ObjectBase
     public $display;
 
     /** @var int */
+    public $features;
+
+    /** @var int */
     public $flags;
 
     /** @var string */
@@ -38,6 +44,12 @@ class Branch extends ObjectBase
 
     /** @var string */
     public $numcanonicalname;
+
+    /** @var int */
+    public $pgKey;
+
+    /** @var int */
+    public $serialVersionUID;
 
     /** @var int */
     public $versiondate;
