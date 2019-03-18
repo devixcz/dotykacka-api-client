@@ -46,8 +46,8 @@ class ApiClient
         );
 
         $uri = new Uri($this->apiBaseUrl.'/'.$path);
+        $contentType = null;
         if ($files) {
-            $contentType = 'multipart/form-data';
             $options = array();
             foreach ($files as $file) {
                 $options[] = array(
@@ -84,9 +84,9 @@ class ApiClient
         $request = $factory->createRequest(
                 $method,
                 $uri,
-                [
+                $contentType ? [
                         'Content-Type' => array($contentType),
-                ],
+                ] : [],
                 $body
         );
 
